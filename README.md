@@ -1,12 +1,9 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+This is an list you need to run this project.
 * Docker
 
 ### Installation
@@ -26,11 +23,16 @@ This is an example of how to list things you need to use the software and how to
    ```
 3. Copy .env.example and name it .env
 
-4. Run the application 
+4. Run the migration and seed 
+    ``` sh
+    ./vendor/bin/sail artisan migrate:fresh --seed
+    ```
+
+5. Run the application 
     ``` sh
     ./vendor/bin/sail up -d
     ```
-5. Down the application
+6. Down the application
     ``` sh
     ./vendor/bin/sail down
     ```
